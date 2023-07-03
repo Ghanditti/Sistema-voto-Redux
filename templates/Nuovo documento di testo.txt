@@ -1,0 +1,15 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item Voting Results</title>
+</head>
+<body>
+    <h1>Voting Results</h1>
+    <ul>
+        {% for item, count in votes.items() %}
+            <li>{{ item }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
